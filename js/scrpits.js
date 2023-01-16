@@ -39,3 +39,10 @@ const teamMember = [
     },
 
 ];
+
+// stampo in console
+console.log('I membri sono', teamMember)
+
+for (let i=0; i<teamMember.length; i++){
+    console.log('Membro ' + (i+1), teamMember[i].nome, teamMember[i].ruolo, teamMember[i].foto)
+}
