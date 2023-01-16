@@ -44,5 +44,18 @@ const teamMember = [
 console.log('I membri sono', teamMember)
 
 for (let i=0; i<teamMember.length; i++){
-    console.log('Membro ' + (i+1), teamMember[i].nome, teamMember[i].ruolo, teamMember[i].foto)
+    console.log('Membro ' + (i+1), teamMember[i].nome, teamMember[i].ruolo, teamMember[i].foto);
+
+    const cardContainer = document.getElementById('card-container');
+    const newCard = document.createElement('div');
+    cardContainer.append(newCard);
+    newCard.classList.add('card');
+
+    newCard.innerHTML = (teamMember[i].nome + '<br>' +teamMember[i].ruolo + '<br>' + teamMember[i].foto);
+
 }
+
+// Stampo nel dom
+
+
+
